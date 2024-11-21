@@ -8,3 +8,9 @@ Task 3: Implement form validation to ensure that all required fields are filled 
 */
 
 // Task 2
+function handleSubmit(event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    alert("Congratulations, " + name + " Form Submitted Successfully!");
+    document.getElementById('form').reset();
+}
