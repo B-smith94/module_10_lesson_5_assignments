@@ -18,9 +18,12 @@ let products = [
 
 // Task 2
 function displayProducts() {
-    const newParagraph = document.createElement("p")
-    newParagraph.innerHTML = products;
+    document.getElementById('products').innerHTML = 
+    products[0].name + ", " + products[0].price + ", " +products[0].description + "; " + 
+    products[1].name + ", " + products[1].price + ", " +products[1].description + "; " + 
+    products[2].name + ", " + products[2].price + ", " +products[2].description;
+    console.log("Displaying Products...")
 }
 
 // Task 3
-document.getElementsByTagName("body").addEventListener("load", displayProducts);
+document.getElementById("products").addEventListener("load", displayProducts());
