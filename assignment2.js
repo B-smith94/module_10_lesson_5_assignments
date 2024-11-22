@@ -11,6 +11,10 @@ Task 3: Implement form validation to ensure that all required fields are filled 
 function handleSubmit(event) {
     event.preventDefault();
     const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+    let formSubmit = {"name": name, "email": email, "message": message};
+    console.log(formSubmit);
     alert("Congratulations, " + name + " Form Submitted Successfully!");
     document.getElementById('form').reset();
 }
